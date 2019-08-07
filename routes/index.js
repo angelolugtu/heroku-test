@@ -7,6 +7,10 @@ router.get('/', async (ctx, next) => {
     ctx.body = appVersion
 })
 
+router.get('/one', async (ctx, next) => {
+    ctx.body = 'New version'
+})
+
 router.post('/sample', async (ctx, next) => {
     ctx.body = 'Hello World'
 })
